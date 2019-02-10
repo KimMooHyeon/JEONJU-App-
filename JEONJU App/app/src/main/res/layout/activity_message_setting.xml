@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelSettingActivity">
+
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+        <TextView
+            android:textSize="16sp"
+            android:lineSpacingExtra="8sp"
+            android:textColor="#000000"
+            android:text="-응급 메세지 설정-"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/textView2" />
+</LinearLayout>
+    <LinearLayout
+android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="212dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="10dp"
+                android:lineSpacingExtra="6sp"
+                android:paddingLeft="29dp"
+                android:text="메세지 전송"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="18dp"
+                android:checked="true"
+                android:text="자유입력" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="324dp"
+            android:layout_height="94dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/round_box"
+            android:ems="15"
+            android:gravity="center"
+            android:inputType="text"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:text="위급상황입니다. 지금 연락주세요"
+            android:textSize="8pt" />
+            <Button
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#f3882e"
+                android:text="저장"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_width="323dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_ok"
+                android:layout_below="@+id/editText"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:elevation="0dp"
+                android:onClick="WriteBtn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_tel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background=" #ffffff "
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            tools:context="com.computer.inu.jeonjuapp.TelSettingActivity">
+
+            <TextView
+                android:id="@+id/title_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="15dp"
+                android:lineSpacingExtra="6sp"
+                android:text="수신자 설정"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_contacts"
+                android:layout_marginBottom="19dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_user_write"
+                    android:layout_width="77.7dp"
+                    android:layout_height="32dp"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="113.3dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/txtPhone"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_toStartOf="@+id/btnSave"
+                    android:layout_toLeftOf="@+id/btnSave"
+                    android:onClick="pickContact"
+                    android:text="불러오기" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="323dp"
+                android:layout_height="26dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="94dp"
+                android:background="@drawable/round_box"
+                android:ems="10"
+                android:hint="이름"
+                android:inputType="textPersonName"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/txtPhone"
+                android:layout_width="323dp"
+                android:layout_height="26dp"
+                android:layout_below="@+id/txtName"
+                android:layout_alignEnd="@+id/txtName"
+                android:layout_alignRight="@+id/txtName"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_box"
+                android:ems="10"
+                android:hint="전화번호"
+                android:inputType="phone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/btnSave"
+                android:layout_marginTop="26dp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="323dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtPhone"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:onClick="InputData"
+                android:text="추가하기" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

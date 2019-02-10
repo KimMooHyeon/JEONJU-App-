@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/background_light"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="8sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            tools:text="강좌 제목" />
+
+        <TextView
+            android:id="@+id/who_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="12sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#8a000000"
+            android:textSize="13sp"
+            tools:text="지원대상" />
+
+        <TextView
+            android:id="@+id/content_text6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:text="강사명" />
+
+        <TextView
+            android:id="@+id/content_text7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:text="강의내용" />
+
+        <TextView
+            android:id="@+id/content_text1"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:text="수강인원" />
+
+        <TextView
+            android:id="@+id/content_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:text="수강비" />
+
+        <TextView
+            android:id="@+id/content_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:text="접수기간" />
+
+        <TextView
+            android:id="@+id/content_text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:text="수강기간" />
+
+        <TextView
+            android:id="@+id/content_text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:text="강의시간" />
+
+        <TextView
+            android:id="@+id/content_text8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:text="수강장소" />
+
+        <TextView
+            android:id="@+id/content_text9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:paddingLeft="22.5dp"
+            android:paddingRight="22.5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:text="주소" />
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="12dp"
+            android:background="#00ff0000"
+            android:text="확인"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="19sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
